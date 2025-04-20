@@ -12,6 +12,7 @@
 - Generate visualizations:
   - Bar plot of missing percentages per column
   - Heatmap of missing values across rows and columns
+  - Box plot
 - CLI interface for fast analysis from the terminal
 - Modular Python package with reusable components
 - Test suite with high coverage
