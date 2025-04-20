@@ -1,8 +1,10 @@
 # Final Project: Missing Data Analyzer 
 **Missing Data Analyzer** is a Python library and CLI tool for detecting, summarizing, and visualizing missing data in tabular datasets (CSV format). It helps users understand the extent of missingness in their data and offers clean, interpretable summaries and visual diagnostics. 
 
-# Group Members
-Ellen Wu, Isabella Xu, Achint Kaur
+# Group Members & Responsibilities 
+Ellen Wu: Visualizer 
+Isabella Xu: Analyzer 
+Achint Kaur: Analyzer 
 
 # Features 
 - Load tabular data (CSV) and detect missing values
