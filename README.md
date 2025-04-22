@@ -19,20 +19,4 @@
 - Clean codebase using `ruff` and continuous integration via GitHub Actions 
 
 # Repository Structure
-Python_Final_Project/
-├── missingdata/
-│   ├── __init__.py
-│   ├── analyzer.py
-│   ├── loader.py
-│   ├── summary.py
-│   ├── visualize.py
-├── tests/
-│   ├── test_summary.py
-│   ├── test_analyzer.py
-├── cli.py
-├── requirements.txt
-├── pyproject.toml
-├── README.md
-├── .github/
-│   └── workflows/
-│       └── ci.yml
+```text Python_Final_Project/ ├── missingdata/ │ ├── __init__.py │ ├── analyzer.py │ ├── loader.py │ ├── summary.py │ ├── visualize.py ├── tests/ │ ├── test_summary.py │ ├── test_analyzer.py ├── cli.py ├── requirements.txt ├── pyproject.toml ├── README.md ├── .github/ │ └── workflows/ │ └── ci.yml ```
