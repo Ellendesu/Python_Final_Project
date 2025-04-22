@@ -19,29 +19,20 @@
 - Clean codebase using `ruff` and continuous integration via GitHub Actions 
 
 # Repository Structure
-/data-analyzer
-├── src/
-
+Python_Final_Project/
+├── missingdata/
 │   ├── __init__.py
-
-│   ├── analyzer.py        # Core analysis functions
-
-│   ├── visualizer.py      # Visualization functions
-
-│   └── imputer.py        # Imputation suggestions
-
+│   ├── analyzer.py
+│   ├── loader.py
+│   ├── summary.py
+│   ├── visualize.py
 ├── tests/
-
+│   ├── test_summary.py
 │   ├── test_analyzer.py
-
-│   ├── test_visualizer.py
-
-│   └── test_imputer.py
-
-├── examples/             # Sample datasets and demo notebooks
-
-├── docs/                 # Documentation
-
-├── pyproject.toml        # Project configuration
-
-└── README.md
+├── cli.py
+├── requirements.txt
+├── pyproject.toml
+├── README.md
+├── .github/
+│   └── workflows/
+│       └── ci.yml
