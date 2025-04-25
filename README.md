@@ -3,8 +3,8 @@
 
 # Group Members & Responsibilities 
 - Ellen Wu: Visualizer & its test file
-- Isabella Xu: Analyzer test file & sample csv document
-- Achint Kaur: Analyzer file & details
+- Isabella Xu: Analyzer test file & README.md 
+- Achint Kaur: Analyzer file & structure 
 
 # Features 
 - Load tabular data (CSV) and detect missing values
@@ -27,12 +27,13 @@
 │   ├── summary.py
 │   ├── visualize.py
 ├── tests/
-│   ├── test_summary.py
-│   ├── test_analyzer.py
+│   ├── test_summary.py 
+│   ├── test_analyzer.py 
+│   ├── test_visualize.py 
 ├── cli.py
 ├── requirements.txt
 ├── pyproject.toml
 ├── README.md
 ├── .github/
 │   └── workflows/
-│       └── ci.yml ```
+│       └── ci.yml 
