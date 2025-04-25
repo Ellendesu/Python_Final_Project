@@ -3,7 +3,7 @@
 
 # Group Members & Responsibilities 
 - Ellen Wu: Visualizer & its test files
-- Isabella Xu: Analyzer test file
+- Isabella Xu: Analyzer test file & sample csv document
 - Achint Kaur: Analyzer 
 
 # Features 
