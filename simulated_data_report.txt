@@ -1,0 +1,15 @@
+==================================================
+MISSING DATA ANALYSIS REPORT
+==================================================
+Dataset: simulated_data.csv
+Total rows: 100
+Total columns: 4
+Total missing values: 17
+Percentage missing: 4.25%
+
+COLUMN-WISE ANALYSIS:
+       Missing Count  Missing %
+Group              7        7.0
+Y                  4        4.0
+X2                 4        4.0
+X1                 2        2.0
