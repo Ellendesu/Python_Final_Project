@@ -2,69 +2,52 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def plot_missing_bar(df, save_path=None):
-    """
-    Generate a bar plot showing missing value percentages per column.
+    """Fixed bar plot of missing percentages"""
+    missing_pct = df.isnull().mean().sort_values(ascending=False) * 100
     
-    Args:
-        df: pandas DataFrame to analyze
-        save_path: Optional path to save the plot
-    """
-    summary = df.isnull().mean().sort_values(ascending=False)
     plt.figure(figsize=(10, 6))
-    summary.plot(kind='bar', color='salmon')
-    plt.title("Missing % per Column")
-    plt.ylabel("Fraction Missing")
-    plt.xlabel("Columns")
-    plt.xticks(rotation=45)
-    plt.tight_layout()
+    ax = sns.barplot(x=missing_pct.index, y=missing_pct.values, color='salmon')
+    
+    plt.title("Missing Data Percentage by Column", fontsize=14)
+    plt.ylabel("Percentage Missing")
+    plt.ylim(0, 100)  # Proper percentage scale
+    
+    # Add value labels
+    for p in ax.patches:
+        height = p.get_height()
+        ax.text(p.get_x() + p.get_width()/2., height + 1,
+                f'{height:.1f}%', ha='center')
     
     if save_path:
-        plt.savefig(save_path)
+        plt.savefig(save_path, bbox_inches='tight', dpi=300)
         plt.close()
     else:
         plt.show()
 
 def plot_missing_heatmap(df, save_path=None):
-    """
-    Generate a heatmap showing missing values across rows and columns.
-    
-    Args:
-        df: pandas DataFrame to analyze
-        save_path: Optional path to save the plot
-    """
+    """Heatmap of missing values"""
     plt.figure(figsize=(10, 6))
-    sns.heatmap(df.isnull(), cbar=False, cmap='viridis', yticklabels=False)
-    plt.title("Missing Values Heatmap")
-    plt.xlabel("Columns")
-    plt.ylabel("Rows")
-    plt.tight_layout()
+    sns.heatmap(df.isnull(), cbar=False, cmap='viridis', 
+               yticklabels=False, xticklabels=True)
+    plt.title("Missing Values Heatmap", fontsize=14)
     
     if save_path:
-        plt.savefig(save_path)
+        plt.savefig(save_path, bbox_inches='tight', dpi=300)
         plt.close()
     else:
         plt.show()
 
 def plot_missing_box(df, save_path=None):
-    """
-    Generate a box plot showing distribution of missing values per column.
-    
-    Args:
-        df: pandas DataFrame to analyze
-        save_path: Optional path to save the plot
-    """
+    """Box plot of missing value distribution"""
     plt.figure(figsize=(10, 6))
-    sns.boxplot(data=df.isnull().melt(var_name='columns', value_name='missing'), 
-                x='columns', y='missing', color='salmon',
-                orient='v')  # Explicitly set orientation
-    plt.title("Missing Values Distribution per Column")
+    sns.boxplot(data=df.isnull().melt(var_name='columns', value_name='missing'),
+                x='columns', y='missing', color='lightblue')
+    plt.title("Missing Values Distribution", fontsize=14)
     plt.xlabel("Columns")
-    plt.ylabel("Fraction Missing")
-    plt.xticks(rotation=45)
-    plt.tight_layout()
+    plt.ylabel("Missing (1 = missing)")
     
     if save_path:
-        plt.savefig(save_path)
+        plt.savefig(save_path, bbox_inches='tight', dpi=300)
         plt.close()
     else:
         plt.show()
