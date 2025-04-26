@@ -46,9 +46,7 @@
 ![image](https://github.com/user-attachments/assets/fa86724c-2b27-47d7-b4d5-addbcfd3b773)
 ![image](https://github.com/user-attachments/assets/358ed206-8fd9-4d55-a52f-2f3ce9971cdc)
 ![image](https://github.com/user-attachments/assets/9af3c6bd-2ec6-450e-90a4-539419d57d63)
-[Uploading ==================================================
-MISSING DATA ANALYSIS REPORT
-==================================================
+```
 Dataset: frmgham2 copy.csv
 Total rows: 11627
 Total columns: 39
@@ -95,15 +93,15 @@ CURSMOKE              0   0.000000
 DIABP                 0   0.000000
 SYSBP                 0   0.000000
 AGE                   0   0.000000
-TIMEHYP               0   0.000000frmgham2 copy_report.txt…]()
+TIMEHYP               0   0.000000
+```
 
 ## From generate_simulated_data.py
 ![image](https://github.com/user-attachments/assets/1d174460-5c9f-4b79-b2ec-3de9234d997a)
 ![image](https://github.com/user-attachments/assets/513b3b9a-09b4-4470-912c-21a9741f8c7e)
 ![image](https://github.com/user-attachments/assets/fa7e1025-24e7-49fa-878c-3b55e09d55e3)
-[Uploading simulated_missin==================================================
-MISSING DATA ANALYSIS REPORT
-==================================================
+
+```
 Dataset: simulated_missing_data.csv
 Total rows: 200
 Total columns: 20
@@ -131,6 +129,6 @@ feature_19             18        9.0
 feature_10             15        7.5
 feature_15             14        7.0
 feature_5              14        7.0
-feature_17             11        5.5g_data_report.txt…]()
-
+feature_17             11        5.5
+```
 
