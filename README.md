@@ -39,3 +39,10 @@
 ├── .github/
 │   └── workflows/
 │       └── ci.yml 
+
+# Sample simulations
+
+## From dataset in BIOSTAT 706
+
+
+## From ```generate_simulated_data.py
