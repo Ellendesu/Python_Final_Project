@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 import warnings
 
-from missingdata.visualize import (
+from missingdata.visualizer import (
     plot_missing_bar,
     plot_missing_heatmap,
     plot_missing_box,
