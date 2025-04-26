@@ -38,11 +38,12 @@
 ├── README.md
 ├── .github/
 │   └── workflows/
-│       └── ci.yml 
+│       └── ci.yml
+```
 
 # Sample simulations
-
-## From dataset in BIOSTAT 706
+## From dataset in BIOSTAT 706 (frmgham2.csv)
+![image](https://github.com/user-attachments/assets/fa86724c-2b27-47d7-b4d5-addbcfd3b773)
 
 
 ## From ```generate_simulated_data.py
