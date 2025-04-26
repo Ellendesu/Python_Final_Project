@@ -4,7 +4,6 @@ from pathlib import Path
 from typing import Any, Optional, Union
 
 import pandas as pd
-import matplotlib.pyplot as plt
 
 
 class MissingDataAnalyzer:
@@ -116,27 +115,4 @@ class MissingDataAnalyzer:
 
         return final_report
 
-    def plot_missing_bar(self, save_path: Optional[Union[str, Path]] = None) -> None:
-        """
-        Generate and display (or save) a bar plot of percent missing per column.
-
-        Args:
-            save_path: Optional path to save the plot as an image.
-        """
-        if self.df is None:
-            raise ValueError("Data not loaded. Call load_data() first.")
-
-        missing_frac = self.df.isnull().mean().sort_values(ascending=False)
-
-        plt.figure(figsize=(10, 6))
-        missing_frac.plot(kind="bar", title="Missing % per Column", color="salmon")
-        plt.ylabel("Fraction Missing")
-        plt.xlabel("Columns")
-        plt.tight_layout()
-
-        if save_path:
-            save_path = Path(save_path)
-            plt.savefig(save_path)
-            print(f"Plot saved to {save_path}")
-        else:
-            plt.show()
+    

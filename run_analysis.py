@@ -1,5 +1,5 @@
 from missingdata.analyzer import MissingDataAnalyzer
-from missingdata.visualize import plot_missing_bar, plot_missing_heatmap, plot_missing_box
+from missingdata.visualizer import plot_missing_bar, plot_missing_heatmap, plot_missing_box
 from pathlib import Path
 
 def get_user_file_path():
@@ -29,7 +29,7 @@ def analyze_simulated_data():
         # Load and analyze data
         print("\nAnalyzing data...")
         analyzer.load_data()
-        stats = analyzer.compute_missing_stats()
+        analyzer.compute_missing_stats()
         
         # Generate and save report
         report = analyzer.get_summary_report()
