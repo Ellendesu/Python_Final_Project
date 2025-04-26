@@ -1,4 +1,4 @@
-[simulated_missing_data_report.txt](https://github.com/user-attachments/files/19918412/simulated_missing_data_report.txt)[frmgham2 copy_report.txt](https://github.com/user-attachments/files/19918409/frmgham2.copy_report.txt)# Final Project: Missing Data Analyzer 
+# Final Project: Missing Data Analyzer 
 **Missing Data Analyzer** is a Python library and CLI tool for detecting, summarizing, and visualizing missing data in tabular datasets (CSV format). It helps users understand the extent of missingness in their data and offers clean, interpretable summaries and visual diagnostics. 
 
 # Group Members & Responsibilities 
