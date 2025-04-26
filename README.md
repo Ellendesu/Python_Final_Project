@@ -2,9 +2,9 @@
 **Missing Data Analyzer** is a Python library and CLI tool for detecting, summarizing, and visualizing missing data in tabular datasets (CSV format). It helps users understand the extent of missingness in their data and offers clean, interpretable summaries and visual diagnostics. 
 
 # Group Members & Responsibilities 
-- Ellen Wu: Visualizer & its test file
-- Isabella Xu: Analyzer test file & README.md 
-- Achint Kaur: Analyzer file & structure 
+- Ellen Wu: Visualizer, visualizer test file, interface for program (run_analysis.py)
+- Isabella Xu: Analyzer test file, README.md, simulated data generator
+- Achint Kaur: Analyzer file, overall structure 
 
 # Features 
 - Load tabular data (CSV) and detect missing values
@@ -25,12 +25,14 @@
 │   ├── analyzer.py
 │   ├── loader.py
 │   ├── summary.py
-│   ├── visualize.py
+│   ├── visualizer.py
 ├── tests/
 │   ├── test_summary.py 
 │   ├── test_analyzer.py 
-│   ├── test_visualize.py 
+│   ├── test_visualizer.py 
 ├── cli.py
+├── run_analysis.py
+├── generate_simulated_data.py
 ├── requirements.txt
 ├── pyproject.toml
 ├── README.md
