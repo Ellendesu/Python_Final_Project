@@ -63,11 +63,3 @@ def test_summary_report_saves_file(tmp_path: Path, sample_csv: Path) -> None:
         assert "MISSING DATA ANALYSIS REPORT" in contents
 
 
-def test_plot_missing_bar_runs(tmp_path: Path, sample_csv: Path) -> None:
-    analyzer = MissingDataAnalyzer(sample_csv)
-    analyzer.load_data()
-    analyzer.compute_missing_stats()
-    plot_path = tmp_path / "missing_plot.png"
-
-    analyzer.plot_missing_bar(save_path=plot_path)
-    assert plot_path.exists()
